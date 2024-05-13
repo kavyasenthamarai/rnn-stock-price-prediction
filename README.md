@@ -22,8 +22,8 @@ To develop a Recurrent Neural Network model for stock price prediction.
 
 
 ## Program
-#### Name: POOJA A
-#### Register Number: 212222240072
+#### Name: KAVYA K
+#### Register Number: 212222230065
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -61,7 +61,7 @@ model.add(layers.Dense(1))
 
 model.compile(optimizer='adam', loss='mse')
 
-print("NAME: POOJA A  \nREGISTER NUMBER: 212222240072 \n        ")
+print("NAME: KAVYA K \nREGISTER NUMBER: 212222230065 \n        ")
 model.summary())
 
 model.fit(X_train1,y_train,epochs=30, batch_size=15)
@@ -85,7 +85,7 @@ X_test.shape
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
 
-print("NAME: POOJA A \nREGISTER NUMBER: 212222240072\n ")
+print("NAME: KVYA K \nREGISTER NUMBER: 212222230065\n ")
 plt.plot(np.arange(0,1384),inputs, color='yellow', label = 'Test(Real) Google stock price')
 plt.plot(np.arange(60,1384),predicted_stock_price, color='green', label = 'Predicted Google stock price')
 plt.title('Google Stock Price Prediction')
@@ -99,13 +99,12 @@ plt.show()
 
 ### True Stock Price, Predicted Stock Price vs time
 
-![image](https://github.com/poojaanbu0/rnn-stock-price-prediction/assets/119390329/e24d0895-4ade-469c-8a27-c053410547c2)
+
+![image](https://github.com/kavyasenthamarai/rnn-stock-price-prediction/assets/118668727/b0f78c75-d9bf-4a75-9f2f-75f865f29e16)
 
 ### Mean Square Error
+![image](https://github.com/kavyasenthamarai/rnn-stock-price-prediction/assets/118668727/5359cde9-a6e1-40ef-abb6-0691eb96e009)
 
-![image](https://github.com/poojaanbu0/rnn-stock-price-prediction/assets/119390329/85eb57db-84a0-4381-8395-50cae8378e27)
-
-![image](https://github.com/poojaanbu0/rnn-stock-price-prediction/assets/119390329/12b4725a-dcb3-4147-aa4e-733ba7d1b31f)
 
 ## Result
 Thus a Recurrent Neural Network model for stock price prediction is done.
